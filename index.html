@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./style/reset.css">
+   <link rel="stylesheet" href="./style/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <title>React</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__inner">
+               <div class="header-logo">
+                  <img class="header-logo__img" src="./assets/img/reat-logo.svg" alt="">
+                  <p class="header-logo__title">React</p>
+               </div>
+               <div class="header__menu menu">
+                  <nav class="menu__body">
+                     <a href="#" class="menu__link" data-goto=".home">Главная</a>
+                     <a href="#" class="menu__link" data-goto=".spa">SPA</a>
+                     <a href="#" class="menu__link" data-goto=".projects">Проекты</a>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <section class="home">
+            <div class="container">
+               <div class="home__inner">
+                  <h1 class="home__title">
+                     React
+                  </h1>
+                  <p class="home__subtitle">
+                     JavaScript-библиотека для создания пользовательских интерфейсов
+                  </p>
+                  <a class="home__button btn" href="https://ru.reactjs.org/docs/getting-started.html">
+                     Начать работу
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <section class="advantages">
+            <div class="container">
+               <div class="advantages__inner">
+                  <ul class="advantages__list">
+                     <li class="advantages__item">
+                        <h3 class="advantages__title">
+                           Декларативный
+                        </h3>
+                        <p class="advantages__text">
+                           Создавать интерактивные пользовательские интерфейсы на React — приятно и просто. Вам
+                           достаточно описать, как части интерфейса приложения выглядят в разных состояниях. React будет
+                           своевременно их обновлять, когда данные изменяются. <br><br>
+
+                           Декларативные представления сделают код более предсказуемым и упростят отладку.
+                        </p>
+                     </li>
+                     <li class="advantages__item">
+                        <h3 class="advantages__title">
+                           Основан на компонентах
+                        </h3>
+                        <p class="advantages__text">
+                           Создавайте инкапсулированные компоненты с собственным состоянием, а затем объединяйте их в
+                           сложные пользовательские интерфейсы.
+                           <br> <br>
+                           Поскольку логика компонента написана на JavaScript, а не содержится в шаблонах, можно с
+                           лёгкостью передавать самые разные данные по всему приложению и держать состояние вне DOM.
+                        </p>
+                     </li>
+                     <li class="advantages__item">
+                        <h3 class="advantages__title">
+                           Научитесь однажды — пишите где угодно
+                        </h3>
+                        <p class="advantages__text">
+                           Нам не нужно ничего знать про остальную часть вашего технологического стека, поэтому вы
+                           можете разрабатывать новую функциональность на React, не изменяя существующий код.
+                           React также может работать на сервере, используя Node.js и на мобильных платформах, используя
+                           <a class="text-link" href="https://reactnative.dev/"> React Native.</a>
+                        </p>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+
+         <section class="spa">
+            <div class="spa__inner">
+               <div class="spa__content">
+                  <h3 class="spa__title">
+                     Зачем нам нужен SPA?
+                  </h3>
+                  <p class="spa__text">
+                     SPA работает так: когда пользователь открывает страницу, браузер загружает сразу весь код
+                     приложения. Но показывает только конкретный модуль — часть сайта, которая нужна пользователю. Когда
+                     пользователь переходит в другую часть приложения, браузер берёт уже загруженные данные и показывает
+                     ему. И, если нужно, динамически подгружает с сервера нужный контент без обновления страницы.
+                     <br>
+                     С одной стороны, такие приложения работают быстро и меньше нагружают сервер. С другой стороны, они
+                     требуют большей загрузки на старте.
+                  </p>
+               </div>
+               <div class="spa__image-box">
+                  <img class="spa__image spa__image-horizontal" src="./assets//img/SpaImage.svg" alt="SpaImage">
+                  <img class="spa__image spa__image-vertical" src="./assets//img/SpaImageV.svg" alt="SpaImage">
+               </div>
+            </div>
+         </section>
+
+         <section class="projects">
+            <div class="container">
+               <div class="projects__inner">
+                  <h3 class="projects__title">
+                     Мои проекты на React
+                  </h3>
+                  <div class="carousel swiper">
+                     <ul class="carousel__inner swiper-wrapper">
+                        <li class="carousel__item task-manager swiper-slide">
+                           <div class="carousel-card__inner">
+                              <div class="carousel-card__content">
+                                 <ul class="carousel-card__hashtags hashtags">
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#WEB</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REACT</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REDUX</p>
+                                    </li>
+                                 </ul>
+                                 <div class="carousel-card__title-box">
+                                    <h3 class="carousel-card__title">
+                                       Task Manager
+                                    </h3>
+                                    <ul class="carousel-card__list">
+                                       <li class="carousel-card__item">Написан на React + Redux</li>
+                                       <li class="carousel-card__item">Возможность перетаскивать задачи DnD</li>
+                                       <li class="carousel-card__item">Добавление категорий и поиск по ним</li>
+                                    </ul>
+                                 </div>
+                                 <a class="carousel-card__btn btn"
+                                    href="https://github.com/kirillgileadd/gilead-notes">Подробнее</a>
+                              </div>
+                              <div class="carousel-card__image-box">
+                                 <img class="carousel-card__image" src="./assets/img/taskManager.png" alt="mockup">
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item social-network swiper-slide">
+                           <div class="carousel-card__inner">
+                              <div class="carousel-card__content">
+                                 <ul class="carousel-card__hashtags hashtags">
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#WEB</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REACT</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REDUX</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#RESTAPI</p>
+                                    </li>
+                                 </ul>
+                                 <div class="carousel-card__title-box">
+                                    <h3 class="carousel-card__title">
+                                       Social Network
+                                    </h3>
+                                    <ul class="carousel-card__list">
+                                       <li class="carousel-card__item">Написан на React + Redux</li>
+                                       <li class="carousel-card__item">Логинизация с помощью CORS</li>
+                                       <li class="carousel-card__item">Поиск пользователей</li>
+                                       <li class="carousel-card__item">Работа с REST API</li>
+                                    </ul>
+                                 </div>
+                                 <a class="carousel-card__btn btn"
+                                    href="https://github.com/kirillgileadd/react-social-network">Подробнее</a>
+                              </div>
+                              <div class="carousel-card__image-box">
+                                 <img class="carousel-card__image" src="./assets/img/socialNetwork.png" alt="mockup">
+                              </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item react-pizza swiper-slide">
+                           <div class="carousel-card__inner">
+                              <div class="carousel-card__content">
+                                 <ul class="carousel-card__hashtags hashtags">
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REACT</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#REDUX</p>
+                                    </li>
+                                    <li class="hashtags__item">
+                                       <p class="hashtags__text">#WEB</p>
+                                    </li>
+                                 </ul>
+                                 <div class="carousel-card__title-box">
+                                    <h3 class="carousel-card__title">
+                                       React Pizza
+                                    </h3>
+                                    <ul class="carousel-card__list">
+                                       <li class="carousel-card__item">Проект сделан по курсу от Archakov blog</li>
+                                    </ul>
+                                 </div>
+                                 <a class="carousel-card__btn btn"
+                                    href="https://github.com/kirillgileadd/react-pizza-app">Подробнее</a>
+                              </div>
+                              <div class="carousel-card__image-box">
+                                 <img class="carousel-card__image" src="./assets/img/recatPizza.png" alt="mockup">
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     <div class="swiper-button-prev"></div>
+                     <div class="swiper-button-next"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__inner">
+            <div class="footer__buttons">
+               <a class="footer__btn btn" href="https://ru.reactjs.org/docs/getting-started.html">Начать работу</a>
+               <a class="footer__btn footer__btn-outline btn"
+                  href="https://ru.reactjs.org/tutorial/tutorial.html">Перейти к введению</a>
+            </div>
+            <p class="footer__text">
+               FaceBook open sorce
+            </p>
+         </div>
+      </footer>
+   </div>
+
+   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="./js/sctipt.js"></script>
+</body>
+
+</html>
